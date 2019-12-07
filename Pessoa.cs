@@ -5,6 +5,7 @@ public class Pessoa {
     public string Nome { get; set; }
     public int Idade { get; set; }
     public double Salario { get; set; }
+    private string Cpf {get; set;}
 
     public Pessoa(){
     }
@@ -38,5 +39,13 @@ public class Pessoa {
 	public void SetSalario(double salario){
 		Salario = salario;
 	}
+
+        public string GetCpf() {
+                return Cpf;
+        }
+
+        public void SetCpf (string novoCpf){
+                Cpf = novoCpf;
+        }
 
 }

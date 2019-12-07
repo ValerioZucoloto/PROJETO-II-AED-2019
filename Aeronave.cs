@@ -6,12 +6,7 @@ class Aeronave {
         public string Fabricante;
         private DateTime DataFabricacao {get; set;} 
         private string NumeroDeSerie {get; set;}
-        public static int QuantidadePassageiros;
-        public static double DistanciaPercorrida;
-        public static double LitrosDeCombustivel;
-        
-
-
+            
         public Aeronave (string modelo, string cor, string fabricante, DateTime data, string numeroDeSerie) {
                 Modelo = modelo;
                 Cor = cor;
@@ -40,9 +35,7 @@ class Aeronave {
                 DataFabricacao = novaData;
         }
 
-        public static void AutonomiaDeVoo() {
-
-        }
+       
 
         
 
