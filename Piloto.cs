@@ -7,7 +7,7 @@ public class Piloto : Pessoa
         {
         }
 
-        public Piloto(string nome, int idade, double salario, string habilitacao) : base (nome, idade, salario)
+        public Piloto(string nome, int idade, string cpf, string habilitacao) : base (nome, idade, cpf)
         {
             Habilitacao = habilitacao;
         }

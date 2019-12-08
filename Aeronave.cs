@@ -1,11 +1,12 @@
 using System;
 
 class Aeronave {
-        public string Modelo;
-        public string Cor;
-        public string Fabricante;
-        private DateTime DataFabricacao {get; set;} 
-        private string NumeroDeSerie {get; set;}
+
+        private string Modelo { get; set; }
+        private string Cor { get; set; }
+        private string Fabricante { get; set; }
+        private DateTime DataFabricacao { get; set; } 
+        private string NumeroDeSerie { get; set; }
             
         public Aeronave (string modelo, string cor, string fabricante, DateTime data, string numeroDeSerie) {
                 Modelo = modelo;
@@ -17,6 +18,30 @@ class Aeronave {
 
         public Aeronave() {
 
+        }
+
+		public string GetModelo() {
+            return Modelo;
+        }
+
+        public void SetModelo(string modelo) {
+            Modelo = modelo;
+        }
+
+		public string GetCor() {
+            return Cor;
+        }
+
+        public void SetCor(string cor) {
+            Cor = cor;
+        }
+
+		public string GetFabricante() {
+            return Fabricante;
+        }
+
+        public void SetFabricante(string fabricante) {
+            Fabricante = fabricante;
         }
 
         public string getNumeroDeSerie() {
@@ -34,12 +59,5 @@ class Aeronave {
         public void setDataFabricacao (DateTime novaData) {
                 DataFabricacao = novaData;
         }
-
-       
-
-        
-
-        
-
 
 }

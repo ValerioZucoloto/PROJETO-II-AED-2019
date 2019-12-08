@@ -4,16 +4,15 @@ public class Pessoa {
 
     public string Nome { get; set; }
     public int Idade { get; set; }
-    public double Salario { get; set; }
-    private string Cpf {get; set;}
+    private string CPF {get; set;}
 
     public Pessoa(){
     }
 
-	public Pessoa(string nome, int idade, double salario){
+	public Pessoa(string nome, int idade, string cpf){
 		Nome = nome;
 		Idade = idade;
-		Salario = salario;
+		CPF = cpf;
 	}
 
 	public string GetNome(){
@@ -32,20 +31,12 @@ public class Pessoa {
 		Idade = idade;
 	}
 
-	public double GetSalario(){
-		return Salario;
+	public string GetCPF() {
+			return CPF;
 	}
 
-	public void SetSalario(double salario){
-		Salario = salario;
+	public void SetCPF(string novoCpf){
+			CPF = novoCpf;
 	}
-
-        public string GetCpf() {
-                return Cpf;
-        }
-
-        public void SetCpf (string novoCpf){
-                Cpf = novoCpf;
-        }
 
 }
