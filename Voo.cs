@@ -9,18 +9,22 @@ class Voo {
 	private string Linha { get; set; }
 	private String Origem { get; set; }
 	private String Destino { get; set; }
+	private DateTime Partida { get; set; }
+	private DateTime Retorno { get; set; }
 
 	public Voo() {
 
 	}
 
-	public Voo (Piloto piloto, List <Passageiro> passageiros, Aviao aviao, string linha, string origem, string destino) {
+	public Voo (Piloto piloto, List <Passageiro> passageiros, Aviao aviao, string linha, string origem, string destino, DateTime partida, DateTime retorno) {
 		_piloto = piloto;
 		listaPassageiro = passageiros;
 		_aviao = aviao; 
 		Linha = linha;  
 		Origem = origem;
 		Destino = destino;
+		Partida = partida;
+		Retorno = retorno;
 	}
 
 	public Piloto GetPiloto(){
@@ -69,6 +73,22 @@ class Voo {
 
 	public void SetDestino(string destino){
 		this.Destino = destino;
+	}
+
+	public DateTime GetPartida(){
+		return Partida;
+	}
+
+	public void SetPartida(DateTime partida){
+		Partida = partida;
+	}
+
+	public DateTime GetRetorno(){
+		return Retorno;
+	}
+
+	public void SetRetorno(DateTime retorno){
+		Retorno = retorno;
 	}
 
 }
